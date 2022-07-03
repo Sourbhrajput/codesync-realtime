@@ -1,0 +1,151 @@
+.logo{
+    height: 40px;
+}
+.editor_container{
+    display: grid;
+    grid-template-columns: 270px auto;
+    
+     
+}
+.left_panel{
+    padding: 20px;
+     
+}
+.left_panel .connected{
+    color: #fff;
+   margin:20px auto;
+   text-align: center;
+   font-size:19px;
+ border-top: 2px solid rgb(74, 68, 68);
+ padding-top: 10px;
+ width: 90%;
+}
+.user_connected{
+    display: grid;
+    grid-template-columns:50% 50%;
+   overflow-x: hidden;
+   overflow-y:auto;
+   
+   
+}
+.client p{
+  word-wrap: break-word;
+  margin: 0 5px;
+}
+.user_connected::-webkit-scrollbar {
+    width: 12px;              
+  }
+  
+  .user_connected::-webkit-scrollbar-track {
+    background:#282a36;        
+  }
+  
+  .user_connected::-webkit-scrollbar-thumb {
+    background-color:var(--background);    
+    border-radius: 20px;        
+    border: 3px solid #282a36;   
+  }
+
+ 
+.client p{
+    color: #fff;
+    margin-top: 5px;
+    margin-bottom:15px;
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    height:76vh;
+    justify-content: space-between;
+   
+   text-align: center;
+   margin: 10px auto;
+   
+
+}
+
+.btn_div .btn{
+background-color: gray;
+color:black;
+text-align: center;
+padding: 4px 12px;
+margin: 10px;
+border-radius: 4px;
+font-weight:bolder;
+font-size:14px;
+cursor: pointer;
+}
+
+.btn_div .copy{
+    background-color: #fff;
+    transition: all .5s ease-in-out;
+}
+.btn_div .copy:hover{
+    background-color: rgb(216, 213, 213);
+}
+.btn_div .leave{
+    background-color: var(--green);
+    transition: all .5s ease-in-out;
+}
+.btn_div .delete{
+    background-color:rgb(206, 41, 41);
+    transition: all .5s ease-in-out;
+}
+.btn_div .delete:hover{
+    background-color:red;
+     
+}
+
+
+.btn_div .leave:hover{
+    background-color:var(--green-background)
+}
+.CodeMirror.cm-s-dracula {
+    height: 100vh;
+   padding: 20px;
+
+ 
+}
+.cm-variable,.CodeMirror.cm-s-dracula{
+    font-size:15px;
+    line-height:25px;
+    font-family: 'Roboto', monospace;
+    word-spacing:2px;
+    letter-spacing:1px;
+}
+.right_panel{
+    overflow-x:auto;
+    
+}
+
+@media only screen and (max-width:700px)
+{
+    .show-icon {
+     
+    transform: translateX(-230px);
+ }
+ .left_panel{
+    position: absolute;
+    z-index: 1111;
+    background-color: #1c1a27;
+    transition: all 1s ease-in-out;
+   
+ }
+ .right_panel{
+    width:100vw;
+     background-color: #282a36;
+     padding-left: 30px;
+ }
+ 
+ 
+.hamburger-container{
+    display: inline-block;
+    transition: all 1s ease-in-out;
+   
+}
+.menu-item-animation{
+    transform: translateX(230px);
+}
+}
+
+ 
